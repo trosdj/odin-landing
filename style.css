@@ -1,7 +1,8 @@
 /* #VARIABLES */
 :root {
   --dark: #1F2937;
-  --light: #E5E7EB;
+  --medium: #E5E7EB;
+  --light: #F9FAF8;
   --accent: #3882F6;
 }
 
@@ -19,6 +20,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.125rem;
+  color: var(--dark);
+  background-color: var(--light);
 }
 
 .container {
@@ -38,16 +41,18 @@ body {
 
 
 
+
 /* #HEADER-STYLING */
 
-.header {
+.header,
+.hero {
   background-color: var(--dark);
 }
 
 .header__logo {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--light);
 }
 
 .nav {
@@ -59,13 +64,63 @@ body {
   list-style: none;
   justify-content: space-between;
   gap: 1rem;
+  padding-left: 0;
 }
 
-.nav__link {
-  color: var(--light);
+.nav__link,
+.hero__btn {
+  color: var(--medium);
   text-decoration: none;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.hero__btn:hover {
   opacity: .75;
+}
+
+
+
+
+
+/* #HERO-FORMATTING */
+
+.hero {
+  padding: 6rem 0;
+}
+
+.hero__text {
+  color: var(--light);
+  width: 50%;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 48px;
+  color: var(--light);
+}
+
+.hero__img {
+  width: 50%;
+  height: 15rem;
+}
+
+.hero__img>img {
+  width: 100%;
+  height: 100%;
+}
+
+.subtext {
+  font-size: 1.125rem;
+  color: var(--medium);
+}
+
+.hero__btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5em 2.5em;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 7px;
+  color: var(--light);
+  background-color: var(--accent);
 }
