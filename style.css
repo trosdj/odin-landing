@@ -1,4 +1,71 @@
+/* #VARIABLES */
+:root {
+  --dark: #1F2937;
+  --light: #E5E7EB;
+  --accent: #3882F6;
+}
+
+
+
+
+
+/* #FORMAT-STYLING */
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+
+
+
+/* #HEADER-STYLING */
+
+.header {
+  background-color: var(--dark);
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav {
+  padding: 1em 0;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__link {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  opacity: .75;
 }
