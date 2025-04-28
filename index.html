@@ -4,8 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Landing Page Assignment</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <header class="header container">
+    <p class="header__logo">Header Logo</p>
+    <nav class="nav">
+      <ul class="nav__list row">
+        <li class="nav__item"><a href="#" class="nav__link">header link one</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">header link two</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">header link three</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container row">
+      <div class="hero__text">
+        <h1 class="hero__title">This website is awesome</h1>
+        <p>This website has some subtext that goes here under the main title.
+          It's a smaller font and the color is lower contrast.
+        </p>
+        <a href="#" class="hero__btn">Sign Up</a>
+      </div>
+    </div>
+    <img src="./images/hero.jpg" alt="Matrix code on a laptop in the dark" class="hero__img"> <!-- Photo Credit: Markus Spiske -->
+  </section>
+
+  <section class="info">
+    <h2 class="info__tile"></h2>
+      <div class="info__imgs row">
+        <div class="info__img">
+          <img src="./images/info_one.webp" alt="Woman coding on a laptop with two extra monitors connected. The desk is covered in toys."> <!-- Photo Credit: ThisIsEngineering -->
+          <p class="subtext">this is some subtext under an illustration or image</p>
+        </div>
+        <div class="info__img">
+          <img src="./images/info_two.webp" alt="Man is sitting at a board room table covered in multiple computers, using a laptop."> <!-- Photo Credit: Djordje Petrovic -->
+          <p class="subtext">this is some subtext under an illustration or image</p>
+        </div>
+        <div class="info__img">
+          <img src="./images/info_three.jpeg" alt="Woman sitting on the couch using a latop. Four books on coding sit next to her."> <!-- Photo Credit: Christina Morillo --> 
+          <p class="subtext">this is some subtext under an illustration or image</p>
+        </div>
+        <div class="info__img">
+          <img src="./images/info_four.jpeg" alt="Man is sitting at a desk using three computers. A notebook sits open above the keyboard."> <!-- Photo Credit: Olia Danilevich -->
+          <p class="subtext">this is some subtext under an illustration or image</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="quote">
+    <div class="container">
+      <p class="quote__text">
+        This is an inspiring quote, or a testimonial from a customer. Maybe it's just
+        filling up space, or maybe people will actually read it. Who knows? All I know
+        is that it looks nice.
+      </p>
+      <p class="quote__byline">
+        -Thor, God of Thunder
+      </p>
+    </div>
+  </section>
+
+  <section class="action container row">
+    <div class="action__text">
+      <h2 class="action__title">Call to action! It's time!</h2>
+      <p class="subtext">Sign up for our product by clicking that button right over there!</p>
+    </div>
+    <a href="#" class="action__btn">Sign up</a>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">Copyright © The odin Project 2021</p>
+  </footer>
 </body>
 </html>
