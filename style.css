@@ -224,3 +224,16 @@ body {
   background-color: var(--light);
   color: var(--accent);
 }
+
+
+
+
+
+/* #FOOTER-STYLING */
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1.5rem 0;
+}
